@@ -1,0 +1,66 @@
+# CHRONO STATION - Unity 협업 설정
+#
+# 주의: 전역 `* text=auto`는 넣지 않습니다. 기존 커밋이 Windows 줄바꿈
+# 그대로 보존된 상태라, 지금 켜면 전 파일이 재정규화되어 거대한 diff가 납니다.
+
+# --- Unity YAML (씬/프리팹/에셋) ---
+# -text  : 줄바꿈 변환 금지 (작성된 바이트 그대로 유지)
+# merge  : UnityYAMLMerge로 병합 (설정법은 Docs/협업_시작하기.md 참고)
+*.unity            -text merge=unityyamlmerge
+*.prefab           -text merge=unityyamlmerge
+*.asset            -text merge=unityyamlmerge
+*.mat              -text merge=unityyamlmerge
+*.anim             -text merge=unityyamlmerge
+*.controller       -text merge=unityyamlmerge
+*.overrideController -text merge=unityyamlmerge
+*.physicMaterial   -text merge=unityyamlmerge
+*.physicsMaterial2D -text merge=unityyamlmerge
+*.playable         -text merge=unityyamlmerge
+*.mask             -text merge=unityyamlmerge
+*.brush            -text merge=unityyamlmerge
+*.flare            -text merge=unityyamlmerge
+*.lighting         -text merge=unityyamlmerge
+*.terrainlayer     -text merge=unityyamlmerge
+*.meta             -text merge=unityyamlmerge
+
+# --- 소스 코드 ---
+*.cs               -text diff=csharp
+*.shader           -text
+*.compute          -text
+*.hlsl             -text
+*.cginc            -text
+
+# --- 바이너리: 병합/줄바꿈 변환 절대 금지 ---
+*.blend            binary
+*.blend1           binary
+*.fbx              binary
+*.obj              binary
+*.dae              binary
+*.3ds              binary
+*.png              binary
+*.jpg              binary
+*.jpeg             binary
+*.tga              binary
+*.tif              binary
+*.tiff             binary
+*.psd              binary
+*.gif              binary
+*.bmp              binary
+*.exr              binary
+*.hdr              binary
+*.cubemap          binary
+*.wav              binary
+*.mp3              binary
+*.ogg              binary
+*.aif              binary
+*.mp4              binary
+*.mov              binary
+*.ttf              binary
+*.otf              binary
+*.dll              binary
+*.so               binary
+*.dylib            binary
+*.pdb              binary
+*.exe              binary
+*.zip              binary
+*.unitypackage     binary
