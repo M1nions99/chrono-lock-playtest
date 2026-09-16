@@ -1,0 +1,2 @@
+CHRONO_PLAY_QA_PASSED
+Scripted CharacterController movement and production interaction API QA. Human mouse/keyboard input is not simulated. Images are camera renders; IMGUI HUD is not included. Unity Editor Search index startup error is retained in log and excluded from game failure results.

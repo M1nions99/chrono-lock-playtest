@@ -1,0 +1,22 @@
+[
+  {
+    "object": "Protagonist_Eyes",
+    "vertices": 1064,
+    "file": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\work\\character-tools\\mpfb-user\\data\\eyes\\high-poly\\high-poly.mhclo"
+  },
+  {
+    "object": "Protagonist_Brows",
+    "vertices": 124,
+    "file": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\work\\character-tools\\mpfb-user\\data\\eyebrows\\eyebrow001\\eyebrow001.mhclo"
+  },
+  {
+    "object": "Protagonist_ShortHair",
+    "vertices": 865,
+    "file": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\work\\character-tools\\mpfb-user\\data\\hair\\short04\\short04.mhclo"
+  },
+  {
+    "object": "Protagonist_Teeth",
+    "vertices": 3868,
+    "file": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\work\\character-tools\\mpfb-user\\data\\teeth\\teeth_base\\teeth_base.mhclo"
+  }
+]

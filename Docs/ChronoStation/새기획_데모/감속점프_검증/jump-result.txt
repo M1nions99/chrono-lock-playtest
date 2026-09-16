@@ -1,0 +1,17 @@
+STATION_JUMP_QA_PASSED
+30Hz | normal | apex=0.960m | airtime=0.633s
+30Hz | slow before jump | apex=0.960m | airtime=3.133s
+30Hz | slow during ascent | apex=0.960m | airtime=2.833s
+30Hz | release during ascent | apex=0.960m | airtime=0.900s
+30Hz | expire during ascent | apex=0.960m | airtime=1.167s
+60Hz | normal | apex=0.960m | airtime=0.633s
+60Hz | slow before jump | apex=0.959m | airtime=3.117s
+60Hz | slow during ascent | apex=0.959m | airtime=2.850s
+60Hz | release during ascent | apex=0.960m | airtime=0.900s
+60Hz | expire during ascent | apex=0.961m | airtime=1.183s
+120Hz | normal | apex=0.960m | airtime=0.625s
+120Hz | slow before jump | apex=0.952m | airtime=3.109s
+120Hz | slow during ascent | apex=0.952m | airtime=2.842s
+120Hz | release during ascent | apex=0.961m | airtime=0.884s
+120Hz | expire during ascent | apex=0.961m | airtime=1.175s
+Real controller on authored flat floor. Deterministic 30/60/120 Hz simulation steps; not a claim of measured rendering frame rate. Existing stage selected as isolated test setup. No transform injection during flight.

@@ -1,0 +1,3 @@
+Text preferredHeight > allocated rect height + 2: advisory layout checks, not automatic failures. Manual inspection is required for font metrics, deliberate truncation and two-line body text.
+These captures do not exercise real pointer hover. Disabled buttons may intentionally be dim; keyboard selection may be present. HDR/post-processing are disabled only while capturing, then restored.
+No height warnings detected.

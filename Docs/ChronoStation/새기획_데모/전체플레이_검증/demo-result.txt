@@ -1,0 +1,35 @@
+STATION_DEMO_QA_PASSED
+Boot opens revised title
+Pause freezes awakening
+Title-return during awakening safely restores standing view
+Object input locked at start without affecting self
+Later self abilities stay locked
+Normal speed cannot pass timed door; failure resets current stage
+Self acceleration cast accepted
+Accelerated player physically crosses timed gate
+Second self ability unlocks in stage two
+Ordinary jump cannot bypass slow-air challenge
+Self slowdown activated
+Slow-air jump crosses eight-metre gap without teleportation
+Self stop activated at impact warning
+Self stop roots player and blocks scanner impact
+Observation record obtained through E interaction
+Self rewind activated
+Self rewind restores current entrance and preserves acquired memory
+All four self lessons precede object unlock
+Real aim ray identifies generator
+Object acceleration accepted
+Pause freezes object timeline and run clock
+Generator acceleration supplies full power
+Real ray identifies platform control
+Moving platform slowed
+CharacterController is carried by moving platform
+Real ray identifies rotor control
+Object stop accepted
+Stopped rotor remains fixed during safe passage
+Final bridge records its live displacement
+Real ray identifies cargo control
+Object rewind accepted with actual history
+Actual cargo history restores and secures bridge
+Complete run reaches return-flight ending
+Automated input uses real CharacterController, physics targeting, and gameplay methods; no stage teleports or forced solved flags. Captures use temporary camera-space HUD and SDR, so overlay-hand layering differs from normal UI rendering. Human playtime not measured.

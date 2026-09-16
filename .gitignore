@@ -1,0 +1,45 @@
+# Unity-generated data
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/MemoryCaptures/
+/Recordings/
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.opendb
+*.VC.db
+sysinfo.txt
+*.log
+*.blend1
+*.blend2
+.DS_Store
+Thumbs.db
+# Local credentials and per-machine connection settings
+.env
+.env.*
+!.env.example
+.mcp.json
+.claude/
+.codex/
+# Playable builds are published as GitHub Release assets
+/CHRONO_STATION.exe
+/CHRONO_STATION_Data/
+/ChronoLock.exe
+/ChronoLock_Data/
+/UnityPlayer.dll
+/UnityCrashHandler64.exe
+/MonoBleedingEdge/
+/D3D12/
+/CHRONO_STATION-Windows.zip

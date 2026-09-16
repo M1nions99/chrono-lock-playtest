@@ -1,0 +1,107 @@
+CHRONO_UI_QA_PASSED
+Production UI API/state smoke tests; no physical keyboard or mouse simulation. Completion uses synthetic prerequisite setup. PNGs render runtime Canvas through gameplay camera; real display/input QA remains separate. Cursor lock during Editor focus is not asserted.
+Boot is paused title before a run
+Page Title
+Menu/completion freezes timer and rotor
+Title cursor visible
+Runtime UI canvas exists
+Title blocks temporal action
+Page Options
+Runtime UI canvas exists
+Page Confirm
+Page Options
+Cancel discard preserves draft
+Page Title
+Discard leaves live settings unchanged
+Applied options survive Save/Load
+Volume applies to listener
+Page Title
+Page Controls
+Runtime UI canvas exists
+Page Title
+Start begins run
+Page HUD
+Run timer advances
+Runtime UI canvas exists
+Page Pause
+Menu/completion freezes timer and rotor
+Pause cursor visible
+Runtime UI canvas exists
+Pause blocks temporal action
+Page Pause
+Page Pause
+Page Confirm
+Page Pause
+Cancel restart preserves run
+Page HUD
+Resume advances preserved timer
+Page Title
+Return title retains resumable run
+Menu/completion freezes timer and rotor
+Page HUD
+Page Confirm
+Runtime UI canvas exists
+Page HUD
+Confirmed restart resets run
+Production completion action reaches completed state
+Page Completed
+Menu/completion freezes timer and rotor
+Completion cursor visible
+Runtime UI canvas exists
+Completion blocks temporal action
+Replay resets puzzle state
+Invalid scalar settings sanitized
+Page Hints
+Hints opened from HUD pause gameplay
+Menu/completion freezes timer and rotor
+Runtime UI canvas exists
+Page Hints
+Menu/completion freezes timer and rotor
+Runtime UI canvas exists
+Page HUD
+Hints Back returns directly to originating HUD
+Page Controls
+Page HUD
+Controls Back returns directly to originating HUD
+Page Hints
+Menu/completion freezes timer and rotor
+Page Pause
+Hints opened from pause return to pause
+Page Title
+Runtime UI canvas exists
+Runtime UI canvas exists
+Runtime UI canvas exists
+Page Options
+Runtime UI canvas exists
+Page Options
+Runtime UI canvas exists
+Page Options
+Runtime UI canvas exists
+Page Options
+Runtime UI canvas exists
+Page Title
+Page Journal
+Journal pauses play
+Runtime UI canvas exists
+Only first story record unlocked at start
+Runtime UI canvas exists
+Page HUD
+Journal Back resumes originating HUD
+Page Pause
+Runtime UI canvas exists
+Page Pause
+Page Completed
+Page Completed
+Page Story
+Runtime UI canvas exists
+Page Title
+Page HUD
+Intro starts fresh chapter
+Sensitivity slider exists
+Pointer hits runtime graphics
+Pointer reaches slider through actual GraphicRaycaster
+Pointer-down changes sensitivity draft
+Pointer drag changes draft and enables Apply
+Pointer changes remain unapplied until Apply
+Runtime UI canvas exists
+Page Confirm

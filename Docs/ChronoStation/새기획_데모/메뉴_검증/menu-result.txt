@@ -1,0 +1,37 @@
+STATION_MENU_QA_PASSED
+Temporal regression including thirty-second mid-motion stop: 
+Cargo movement beyond twelve recorded seconds reports lost initial history
+Cargo reset restores actual initial history
+Title hides first-person hand
+Title settings callback opens options
+Slider draft does not change live preferences
+Laid-out slider handle remains inside its row: 전체 음량 slider
+Laid-out slider handle remains inside its row: 효과음 slider
+Laid-out slider handle remains inside its row: 마우스 감도 slider
+Laid-out slider handle remains inside its row: 시야각 slider
+Page bounds fit capture: 01-options-1280x720.png
+Page bounds fit capture: 01-options-1280x720.png
+Page bounds fit capture: 01-options-1280x720.png
+Page bounds fit capture: 01-options-1280x720.png
+Back cancels options draft
+Canceled draft leaves stored preferences unchanged
+Reopened options discards previous draft
+Apply callback commits FOV to current settings
+Apply callback persists FOV
+Page bounds fit capture: 02-options-1280x800.png
+Page bounds fit capture: 02-options-1280x800.png
+Page bounds fit capture: 02-options-1280x800.png
+Page bounds fit capture: 02-options-1280x800.png
+New-game UI callback guards the same input frame
+New game starts actual awakening
+Pause freezes awakening clock and hides hand
+Resume callback blocks immediate gameplay input without casting
+Awakening resumes without stray ability
+Standing HUD shows first-person hand
+Page bounds fit capture: 03-hud-1280x800.png
+Page bounds fit capture: 03-hud-1280x800.png
+Page bounds fit capture: 03-hud-1280x800.png
+Page bounds fit capture: 03-hud-1280x800.png
+Standing resume button also guards immediate input
+Gameplay input unlocks after menu guard with no unwanted cast
+Production uGUI callbacks and public gameplay APIs; not hardware clicks. Camera-space SDR captures may differ from normal overlay composition. Original preference key and runtime settings restored.

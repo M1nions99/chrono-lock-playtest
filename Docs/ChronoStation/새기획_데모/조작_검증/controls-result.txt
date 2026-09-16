@@ -1,0 +1,157 @@
+STATION_CONTROL_QA_PASSED
+Opening lesson locks object powers
+Left click before object unlock never casts on self
+Right click activates self acceleration in the opening lesson
+Locked left click does not toggle or refresh an existing self effect
+Q cancels the self effect
+Wheel wraps only the single unlocked ability
+Number keys cannot select a locked ability
+Second lesson exposes exactly two choices
+Negative wheel selects previous unlocked ability
+Negative wheel wraps inside the unlocked subset
+Positive wheel wraps inside the unlocked subset
+Production targeting ray identifies the generator after object unlock
+Right click targets self even while aiming at a device
+Left click affects the aimed object and preserves the self effect
+Q releases self and object effects together
+A fresh right click starts self effect after cancel cooldown
+Repeating the same right click toggles self effect off
+A fresh left click starts the object effect
+Repeating the same left click toggles object effect off
+Key 3 selects stop
+Right click starts self stop
+Selection can change while self stop remains active
+Right click always releases self stop even after selecting another ability
+Empty-target fixture uses the real raycast
+Left click into empty space never falls back to self casting
+Pause opens before held-input test
+Paused mouse buttons, wheel, and number key cannot alter gameplay
+Holding buttons across resume does not replay paused input
+A fresh click after resume works normally
+Q still cancels after resume
+Key 1 selects accelerate
+Key 4 selects rewind once unlocked
+Forward wheel wraps all four unlocked abilities
+Backward wheel wraps all four unlocked abilities
+Queued virtual Mouse/Keyboard states are processed by normal Input System Dynamic updates and production StationGame.Update. A temporary in-memory InputSettings clone routes input into the headless Game View; the original settings object is restored without saving any asset. Button edges must be observed after Dynamic input processing before gameplay assertions. Fixture selects authored stages but never fakes target focus, solved flags, or ability outcomes. No physical devices disabled or removed; only owned virtual devices are removed. Runtime settings restored without saving preferences.
+
+INPUT DELIVERY TRACE
+frame=6 phase=0 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=0/0 rightEdges=0/0 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=7 phase=1 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=0/1 rightEdges=0/0 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=7 phase=1 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=0/0 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=8 phase=1 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=0/0 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=11 phase=1 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=0/0 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=12 phase=2 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=0/1 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=12 phase=2 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=1/1 playing=True accepts=True self= cast=0 cooldown=0.000
+frame=13 phase=2 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=16 phase=2 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/1 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=17 phase=3 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=1/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=17 phase=3 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=18 phase=3 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=21 phase=3 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=22 phase=4 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=22 phase=4 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self=Accelerate cast=1 cooldown=0.000
+frame=23 phase=4 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.700
+frame=26 phase=4 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.633
+frame=27 phase=5 QUEUE buttons=0 wheel=120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.633
+frame=27 phase=5 DELIVERED leftEdge=False rightEdge=False wheel=120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.633
+frame=28 phase=5 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.617
+frame=31 phase=5 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.550
+frame=32 phase=6 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.550
+frame=32 phase=6 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.550
+frame=33 phase=6 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.533
+frame=36 phase=6 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.467
+frame=41 phase=7 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=42 phase=8 QUEUE buttons=0 wheel=-120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=42 phase=8 DELIVERED leftEdge=False rightEdge=False wheel=-120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=43 phase=8 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=46 phase=8 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=47 phase=9 QUEUE buttons=0 wheel=-120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=47 phase=9 DELIVERED leftEdge=False rightEdge=False wheel=-120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=48 phase=9 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=51 phase=9 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=52 phase=10 QUEUE buttons=0 wheel=120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=52 phase=10 DELIVERED leftEdge=False rightEdge=False wheel=120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=53 phase=10 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=56 phase=10 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=61 phase=11 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/1 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=62 phase=12 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=1/2 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=62 phase=12 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=2/2 playing=True accepts=True self= cast=1 cooldown=0.000
+frame=63 phase=12 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=2 cooldown=0.000
+frame=66 phase=12 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/2 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=2 cooldown=0.000
+frame=67 phase=13 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=2/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=2 cooldown=0.000
+frame=67 phase=13 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=2 cooldown=0.000
+frame=68 phase=13 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=3 cooldown=0.000
+frame=71 phase=13 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=3 cooldown=0.000
+frame=72 phase=14 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=3 cooldown=0.000
+frame=72 phase=14 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self=Accelerate cast=3 cooldown=0.000
+frame=73 phase=14 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self= cast=3 cooldown=0.700
+frame=76 phase=14 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/2 playing=True accepts=True self= cast=3 cooldown=0.633
+frame=115 phase=15 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=2/3 playing=True accepts=True self= cast=3 cooldown=0.000
+frame=115 phase=15 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=3/3 playing=True accepts=True self= cast=3 cooldown=0.000
+frame=116 phase=15 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=3/3 playing=True accepts=True self=Accelerate cast=4 cooldown=0.000
+frame=119 phase=15 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=3/3 playing=True accepts=True self=Accelerate cast=4 cooldown=0.000
+frame=120 phase=16 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=3/4 playing=True accepts=True self=Accelerate cast=4 cooldown=0.000
+frame=120 phase=16 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=4/4 playing=True accepts=True self=Accelerate cast=4 cooldown=0.000
+frame=121 phase=16 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=4/4 playing=True accepts=True self= cast=4 cooldown=0.700
+frame=124 phase=16 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/3 rightEdges=4/4 playing=True accepts=True self= cast=4 cooldown=0.633
+frame=125 phase=17 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=3/4 rightEdges=4/4 playing=True accepts=True self= cast=4 cooldown=0.633
+frame=125 phase=17 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=4/4 rightEdges=4/4 playing=True accepts=True self= cast=4 cooldown=0.633
+frame=126 phase=17 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=4/4 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.617
+frame=129 phase=17 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=4/4 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.550
+frame=130 phase=18 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=4/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.550
+frame=130 phase=18 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.550
+frame=131 phase=18 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.533
+frame=134 phase=18 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.467
+frame=163 phase=19 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=163 phase=19 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=164 phase=19 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=167 phase=19 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/4 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=168 phase=20 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=4/5 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=168 phase=20 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self= cast=5 cooldown=0.000
+frame=169 phase=20 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=172 phase=20 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=173 phase=21 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=173 phase=21 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=174 phase=21 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=177 phase=21 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/5 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=178 phase=22 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=5/6 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=178 phase=22 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=6/6 playing=True accepts=True self=Stop cast=6 cooldown=0.000
+frame=179 phase=22 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.700
+frame=182 phase=22 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.633
+frame=187 phase=23 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/5 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.550
+frame=188 phase=24 QUEUE buttons=1 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=5/6 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.550
+frame=188 phase=24 DELIVERED leftEdge=True rightEdge=False wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=6/6 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.550
+frame=189 phase=24 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=6/6 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.533
+frame=192 phase=24 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=6/6 rightEdges=6/6 playing=True accepts=True self= cast=6 cooldown=0.467
+frame=197 phase=25 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=6/6 rightEdges=6/6 playing=False accepts=True self= cast=6 cooldown=0.467
+frame=198 phase=26 QUEUE buttons=3 wheel=120 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=6/7 rightEdges=6/7 playing=False accepts=True self= cast=6 cooldown=0.467
+frame=198 phase=26 DELIVERED leftEdge=True rightEdge=True wheel=120 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/7 playing=False accepts=True self= cast=6 cooldown=0.467
+frame=202 phase=26 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/7 playing=False accepts=True self= cast=6 cooldown=0.467
+frame=207 phase=27 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/7 playing=True accepts=True self= cast=6 cooldown=0.400
+frame=208 phase=28 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/7 playing=True accepts=True self= cast=6 cooldown=0.400
+frame=212 phase=28 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/7 playing=True accepts=True self= cast=6 cooldown=0.317
+frame=232 phase=29 QUEUE buttons=2 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=7/8 playing=True accepts=True self= cast=6 cooldown=0.000
+frame=232 phase=29 DELIVERED leftEdge=False rightEdge=True wheel=0 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=6 cooldown=0.000
+frame=233 phase=29 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self=Slow cast=7 cooldown=0.000
+frame=236 phase=29 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self=Slow cast=7 cooldown=0.000
+frame=237 phase=30 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self=Slow cast=7 cooldown=0.000
+frame=237 phase=30 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self=Slow cast=7 cooldown=0.000
+frame=238 phase=30 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.700
+frame=241 phase=30 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.633
+frame=242 phase=31 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.633
+frame=242 phase=31 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.633
+frame=243 phase=31 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.617
+frame=246 phase=31 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.550
+frame=247 phase=32 QUEUE buttons=0 wheel=0 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.550
+frame=247 phase=32 DELIVERED leftEdge=False rightEdge=False wheel=0 anyKeyEdge=True currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.550
+frame=248 phase=32 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.533
+frame=251 phase=32 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.467
+frame=252 phase=33 QUEUE buttons=0 wheel=120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.467
+frame=252 phase=33 DELIVERED leftEdge=False rightEdge=False wheel=120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.467
+frame=253 phase=33 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.450
+frame=256 phase=33 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.383
+frame=257 phase=34 QUEUE buttons=0 wheel=-120 pending=1 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.383
+frame=257 phase=34 DELIVERED leftEdge=False rightEdge=False wheel=-120 anyKeyEdge=False currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.383
+frame=258 phase=34 QUEUE buttons=0 wheel=0 pending=0 currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.367
+frame=261 phase=34 ASSERT currentMouse=StationControlQAMouse virtualEnabled=True leftEdges=7/7 rightEdges=8/8 playing=True accepts=True self= cast=7 cooldown=0.300

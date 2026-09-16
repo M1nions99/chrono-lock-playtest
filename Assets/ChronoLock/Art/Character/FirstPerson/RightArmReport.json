@@ -1,0 +1,94 @@
+{
+    "source": "Assets/ChronoLock/Resources/Protagonist.prefab",
+    "output": "Assets/ChronoLock/Resources/ProtagonistRightArm.prefab",
+    "preservedTransforms": 99,
+    "preservedBones": 53,
+    "rendererCount": 8,
+    "vertexCount": 5125,
+    "triangleCount": 9226,
+    "elbowAllowanceMeters": 0.07999999821186066,
+    "bones": [
+        {
+            "name": "hand_r",
+            "rootLocal": {
+                "x": 0.48756057024002077,
+                "y": 1.0811846256256104,
+                "z": 0.20025582611560822
+            }
+        },
+        {
+            "name": "middle_01_r",
+            "rootLocal": {
+                "x": 0.5355767011642456,
+                "y": 1.0287435054779053,
+                "z": 0.2860807180404663
+            }
+        },
+        {
+            "name": "index_01_r",
+            "rootLocal": {
+                "x": 0.5179349184036255,
+                "y": 1.041378378868103,
+                "z": 0.30480295419692995
+            }
+        },
+        {
+            "name": "pinky_01_r",
+            "rootLocal": {
+                "x": 0.5455605387687683,
+                "y": 1.0096327066421509,
+                "z": 0.24694806337356568
+            }
+        }
+    ],
+    "parts": [
+        {
+            "renderer": "Protagonist/Flight suit / r elbow flex section_EXPORT#27",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_11de9e97aa929dbc53235a90343bfd72.asset",
+            "vertices": 256,
+            "triangles": 512
+        },
+        {
+            "renderer": "Protagonist/Flight suit / r shoulder reinforcement_EXPORT#30",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_c1e17d9e8e9b10ee43389a4c7445ae9e.asset",
+            "vertices": 193,
+            "triangles": 333
+        },
+        {
+            "renderer": "Protagonist/Protagonist / Tailored flight suit_EXPORT#33",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_98a77b1c04d976f0e2a1a419866f6801.asset",
+            "vertices": 1337,
+            "triangles": 2577
+        },
+        {
+            "renderer": "Protagonist/Protagonist_Body_EXPORT#34",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_04777bfb88579d3d161fcf152803e389.asset",
+            "vertices": 1872,
+            "triangles": 3260
+        },
+        {
+            "renderer": "Protagonist/Right palm / anchor triangle_EXPORT#39",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_0f6a650ab90c95380471ed3d0864c00b.asset",
+            "vertices": 36,
+            "triangles": 48
+        },
+        {
+            "renderer": "Protagonist/Right palm / broken time circle.001_EXPORT#40",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_f1fbaaf6562690ace35f25eef14497ba.asset",
+            "vertices": 477,
+            "triangles": 832
+        },
+        {
+            "renderer": "Protagonist/Right palm / broken time circle.002_EXPORT#41",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_717e259c9b81be341f5faccba8818b80.asset",
+            "vertices": 477,
+            "triangles": 832
+        },
+        {
+            "renderer": "Protagonist/Right palm / broken time circle_EXPORT#42",
+            "mesh": "Assets/ChronoLock/Art/Character/FirstPerson/RightArm_fc82e484bbab3952fcb5aaae2fa3a523.asset",
+            "vertices": 477,
+            "triangles": 832
+        }
+    ]
+}

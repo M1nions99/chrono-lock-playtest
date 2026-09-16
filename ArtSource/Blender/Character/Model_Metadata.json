@@ -1,0 +1,26 @@
+{
+  "display_name": "주인공",
+  "rig_bones": 53,
+  "mesh_count": 43,
+  "vertices": 35714,
+  "triangles": 69458,
+  "right_hand_bones": [
+    "hand_r",
+    "index_01_r",
+    "index_02_r",
+    "index_03_r",
+    "middle_01_r",
+    "middle_02_r",
+    "middle_03_r",
+    "pinky_01_r",
+    "pinky_02_r",
+    "pinky_03_r",
+    "ring_01_r",
+    "ring_02_r",
+    "ring_03_r",
+    "thumb_01_r",
+    "thumb_02_r",
+    "thumb_03_r"
+  ],
+  "fbx": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\outputs\\Character\\Protagonist.fbx"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "application": "C:\\Users\\bhb41\\Desktop\\5team\\최신_게임플레이\\CHRONO_STATION.exe",
+  "durationSeconds": 12,
+  "scope": "Updated standalone title startup with graphics in batch mode; gameplay route, UI, jump and actual input processing tested in Editor",
+  "terminatedByTest": true,
+  "verifiedAt": "2026-09-16T15:08:25.7052592+09:00",
+  "log": "C:\\Users\\bhb41\\Documents\\Codex\\2026-09-14\\sf\\work\\station-controls-player-smoke.log"
+}

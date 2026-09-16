@@ -1,0 +1,89 @@
+CHRONO_FIRST_PERSON_QA_PASSED
+Production gameplay interaction APIs and real-time ChronoWrist updates. Player input disabled: FOV tests apply settings and explicitly set gameplay Camera.fieldOfView; this does not validate ChronoPlayer input/FOV interpolation. Motion-off pose observed for >=.4 seconds. No hardware input injection or full escape route. 1280x720 captures use production base camera/URP stack with temporary HUD Canvas camera mode and capture-only HDR/post changes. Frustum/bounds checks are geometric; visual arm framing requires screenshot review. Saved preferences are not modified.
+Boot title hides right arm
+Exactly one ChronoWrist
+Exactly one arm overlay camera
+Arm camera occurs once in production URP stack
+Legacy wrist and palm objects absent, including inactive objects
+Arm hierarchy has no colliders
+Arm skin mesh has vertices: Flight suit / r elbow flex section_EXPORT
+Arm skin mesh has vertices: Flight suit / r shoulder reinforcement_EXPORT
+Arm skin mesh has vertices: Protagonist / Tailored flight suit_EXPORT
+Arm skin mesh has vertices: Protagonist_Body_EXPORT
+Arm skin mesh has vertices: Right palm / anchor triangle_EXPORT
+Arm skin mesh has vertices: Right palm / broken time circle.001_EXPORT
+Arm skin mesh has vertices: Right palm / broken time circle.002_EXPORT
+Arm skin mesh has vertices: Right palm / broken time circle_EXPORT
+Arm mesh totals: renderers=8 vertices=5125 triangles=9226
+Restart shows arm
+Finite visible arm transform at FOV 78
+Arm overlay matches gameplay FOV
+Finite arm renderer bounds: Flight suit / r elbow flex section_EXPORT
+Finite arm renderer bounds: Flight suit / r shoulder reinforcement_EXPORT
+Finite arm renderer bounds: Protagonist / Tailored flight suit_EXPORT
+Finite arm renderer bounds: Protagonist_Body_EXPORT
+Finite arm renderer bounds: Right palm / anchor triangle_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.001_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.002_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle_EXPORT
+At least one arm renderer intersects overlay frustum
+Production rotor freeze accepted
+Freeze presentation visible
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Visible arm includes a Glyph material renderer
+Freeze glyph is cyan
+Production reactor acceleration accepted
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Visible arm includes a Glyph material renderer
+Acceleration glyph differs and is orange
+Production bridge rewind accepted
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Glyph renderer property block matches selected color
+Visible arm includes a Glyph material renderer
+Rewind glyph differs and is violet
+Restart restores idle arm without active device
+Pause hides arm and overlay
+Return title hides arm
+Resume shows arm
+Finite visible arm transform at FOV 60
+Arm overlay matches gameplay FOV
+Finite arm renderer bounds: Flight suit / r elbow flex section_EXPORT
+Finite arm renderer bounds: Flight suit / r shoulder reinforcement_EXPORT
+Finite arm renderer bounds: Protagonist / Tailored flight suit_EXPORT
+Finite arm renderer bounds: Protagonist_Body_EXPORT
+Finite arm renderer bounds: Right palm / anchor triangle_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.001_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.002_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle_EXPORT
+At least one arm renderer intersects overlay frustum
+Motion-off pose stable for at least .4 seconds
+Finite visible arm transform at FOV 78
+Arm overlay matches gameplay FOV
+Finite arm renderer bounds: Flight suit / r elbow flex section_EXPORT
+Finite arm renderer bounds: Flight suit / r shoulder reinforcement_EXPORT
+Finite arm renderer bounds: Protagonist / Tailored flight suit_EXPORT
+Finite arm renderer bounds: Protagonist_Body_EXPORT
+Finite arm renderer bounds: Right palm / anchor triangle_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.001_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.002_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle_EXPORT
+At least one arm renderer intersects overlay frustum
+Finite visible arm transform at FOV 100
+Arm overlay matches gameplay FOV
+Finite arm renderer bounds: Flight suit / r elbow flex section_EXPORT
+Finite arm renderer bounds: Flight suit / r shoulder reinforcement_EXPORT
+Finite arm renderer bounds: Protagonist / Tailored flight suit_EXPORT
+Finite arm renderer bounds: Protagonist_Body_EXPORT
+Finite arm renderer bounds: Right palm / anchor triangle_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.001_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle.002_EXPORT
+Finite arm renderer bounds: Right palm / broken time circle_EXPORT
+At least one arm renderer intersects overlay frustum

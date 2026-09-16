@@ -1,0 +1,43 @@
+CHRONO_OPENING_QA_PASSED
+Actual real-time Opening component with production menu/pause/finish APIs. Player input component disabled for deterministic testing; no hardware Space/Escape injection and no clock overrides. Camera captures include runtime UI with temporary capture-only HDR/post-processing changes. No saved settings were edited.
+Physical opening room poses exist
+PalmAnchor resource is imported
+Story boots at title before gameplay
+Story starts physical awakening instead of text page
+Awakening UI active
+Eye-opening phase precedes palm reveal
+Palm anchor is visible during rescue communication
+Pause keeps opening resumable
+Paused opening clock stays fixed
+Paused opening camera stays fixed
+Paused awakening can return to title
+Title preserves unfinished awakening clock
+Continue returns to unfinished awakening
+Natural opening completes after its real 10.5 second duration
+Natural finish restores playing/HUD state
+Natural finish stays in opening room
+Natural finish restores standing camera pose
+Natural finish hides opening palm
+Puzzle timer begins only after control release
+Puzzle timer advances after opening
+Fast restart restores playing/HUD state
+Fast restart stays in opening room
+Fast restart restores standing camera pose
+Fast restart hides opening palm
+Restart skips the cinematic
+Accessible opening still shows palm anchor
+Camera motion disabled keeps a fixed shot through rise phase
+Skip during standing phase restores playing/HUD state
+Skip during standing phase stays in opening room
+Skip during standing phase restores standing camera pose
+Skip during standing phase hides opening palm
+Skip does not charge the opening duration to puzzle timer
+Skip during eye-opening phase restores playing/HUD state
+Skip during eye-opening phase stays in opening room
+Skip during eye-opening phase restores standing camera pose
+Skip during eye-opening phase hides opening palm
+Skip during palm phase restores playing/HUD state
+Skip during palm phase stays in opening room
+Skip during palm phase restores standing camera pose
+Skip during palm phase hides opening palm
+Invalid device input remains rejected after skip
